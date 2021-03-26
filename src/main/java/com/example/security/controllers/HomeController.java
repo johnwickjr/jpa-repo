@@ -37,9 +37,9 @@ public class HomeController {
         return service.saveUser(name, pass, role);
     }
 
-    @PostMapping("/testing-get/{ts}")
+        @PostMapping("/testing-get/{ts}")
     public String testing(@PathVariable("ts") String ts) {
         System.out.println(ts);
-        return "/testing-get";
+        return "testing-get";
     }
 }
